@@ -1,0 +1,153 @@
+[data-theme="light"] {
+    --color-bg: #f5edf0;
+    --color-fg: #000000;
+    --border-color: #424c55;
+    --hyperlink-color: purple;
+    
+}
+
+[data-theme="dark"] {
+    --color-bg: #424c55;
+    --color-fg: #f5edf0;
+    --border-color: #dfd0d6;
+    --hyperlink-color: aquamarine;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: "Helvetica Neue", "Arial Narrow", Arial, sans-serif;
+}
+
+/* GENERAL TYPOGRAPHY */
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+a {
+    color: var(--hyperlink-color)
+}
+
+/* NAVIGATION CLASSES */
+
+.navigation {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #886f68;
+}
+
+nav li a {
+    float: left;
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* BUTTONS */
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px;
+    border: 0.05rem solid var(--color-fg);
+    border-radius: 1em;
+    cursor: pointer;
+    color: var(--color-fg);
+    background-color: var(--color-bg);
+}
+
+/* INDEX.HTML */
+
+.column {
+    float: left;
+    width: 50%;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
+.search {
+    float: none;
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: auto;
+    text-align: center;
+}
+
+img {
+    display: flex;
+    margin: auto;
+    border: 5px solid var(--border-color);
+    max-width: 50%;
+}
+
+.icon {
+    display: inline-block;
+    border: none;
+    width: 16px;
+    height: 16px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dish {
+    float: left;
+    max-width: 100%;
+	width: 200px;
+    height: auto;
+    border: 5px solid var(--border-color);
+    margin: 10px
+}
+
+aside a {
+    font-size: x-small;
+}
+
+/* ABOUT.HTML */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    gap: 50px;
+}
+
+/* CONTACT.HTML */
+
+input {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 75%;
+    height: 300px;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 75%;
+    height: auto;
+}
