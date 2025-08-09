@@ -53,7 +53,6 @@ function App() {
   );
 }
 
-// Render the toggle buttons
 ReactDOM.createRoot(document.getElementById("react-toggle-root")).render(
   React.createElement(App)
 );
