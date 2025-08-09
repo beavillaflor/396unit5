@@ -43,7 +43,10 @@
                     </a></li>
                 </ul>
             </nav>
-            <h1>Contact Us</h1>
+            <h1><span data-lang-text="en">Contact Us</span>
+                <span data-lang-text="tl" hidden>
+                Kontakin Kami
+            </span></header></h1>
         </header>
         <section>
             <h2>
@@ -54,17 +57,18 @@
                 May alam na iba pang kainan na Pilipino na hindi pa namin nabahagi? I-email ang pangalan at detalye at maaari naming ibahagi!
             </span>
             </h2>
-            <form action="mailto:beatricevillaflor2026@u.northwestern.edu method="post" enctype="text/plain">
-                <input class="email" type="email" id="email" name="email" placeholder="Type in your email here!">
-                <input class="email" type="text" id="subject" name="subject" placeholder="Type in the restaurant name here!">
-                <input type="text" id="message" name="message" placeholder="Tell us a bit about the the restaurant...">
+            <form action="mailto:beatricevillaflor2026@u.northwestern.edu" method="POST" enctype="text/plain">
+                <input class="email" type="email" id="email" name="email" placeholder="Type in your email here!" required>
+                <input class="email" type="text" id="subject" name="subject" placeholder="Type in the restaurant name here!" required>
+                <input type="text" id="message" name="message" placeholder="Tell us a bit about the the restaurant..." required></textarea>
                 <input class="email" type="submit" value="SEND">
             </form>
         </section>
-        <footer>
-            <button data-theme-toggle aria-label="Change to dark mode">View website in dark mode.</button>
-            <button data-lang-toggle aria-label="Change to Tagalog language">Tignan ang website sa Tagalog.</button>
+         <footer>
+            <div id="react-toggle-root"></div>
         </footer>
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
         <script src="javascript/component.js"></script>
     </body>
 </html>
